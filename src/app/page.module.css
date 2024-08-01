@@ -180,18 +180,32 @@
 }
 
 /* Estilo para list_search */
+
+.search {align-items: center;
+  
+  width: 100%; 
+  height: 3.8rem; 
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px; 
+  box-sizing: border-box;
+}
+
 .list_search {
+  
   position: absolute;
-  top: 30%;
-  left: 50%;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  margin: auto;
   min-height: 20rem;
-  width: 20rem;
-  transform: translate(-50%, -50%);
+  min-width: 27rem;
+  width: 25rem;
   background-color: white;
   padding: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
-  border-radius: 5%;
+  top: 100px;
 }
 
 .list_search li {
@@ -203,23 +217,44 @@
 }
 
 .list_search li p {
-  margin-top: 10px;
+  margin: 10px;
   flex-grow: 1;
 }
 
 .list_search li .button {
-  margin-left: 10px;
+  margin: 10px;
 }
 
-.search input {
-  width: 100%;
-  height: 50px;
-  padding: 10px;
-  margin: 10px 0;
-  border: 1px solid #ccc;
-  border-radius: 12px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
-  box-sizing: border-box; 
+.list_search select {
+  align-items: center;
+  height: 3rem;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  border: 1px solid #d4d4d4;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.input_search {
+  display: flex; /* Usar flexbox para alinhar os elementos na mesma linha */
+  align-items: center; /* Alinhar os itens verticalmente ao centro */
+  gap: 20px; /* Espaçamento entre os elementos */
+}
+
+.input_search input,
+.input_search select {
+  height: 3.5rem; /* Altura uniforme para todos os elementos */
+  padding: 0.5rem; /* Espaçamento interno */
+  border: 1px solid #d4d4d4; /* Borda */
+  border-radius: 5px; /* Bordas arredondadas */
+  box-sizing: border-box; /* Inclui padding e border no tamanho total */
+}
+
+.checkbox input[type="checkbox"] {
+  width: 20px; /* Largura do checkbox */
+  height: 20px; /* Altura do checkbox */
+  cursor: pointer; /* Cursor de ponteiro ao passar sobre o checkbox */
 }
 
 /* Estilo para list */
@@ -236,7 +271,6 @@
   margin: 20px 0;
   padding: 15px;
   background: #f9f9f9;
-  margin-bottom: 10px;
 }
 
 .list .album h2 {
@@ -250,7 +284,7 @@
 .list .album {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 5;
 }
 
 .list .album .music {
